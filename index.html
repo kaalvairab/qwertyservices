@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    qwerty services
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Icon Library -->
+
+  <script src="https://kit.fontawesome.com/9337df7910.js" crossorigin="anonymous"></script>
+
+  <!-- Font Library -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet" />
+  <!--Custom Stylesheet link -->
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <!-- Custom JS  LINK -->
+</head>
+
+<body>
+  <!-- header -->
+
+  <div class=" parallax">
+
+    <div class="flex-header">
+      <div class="site-name">Qwerty Services</div>
+      <div class="menu" id="myBtn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <div class="slider">
+      <div><a href="#about">
+          <i class="fas fa-chevron-circle-down"></i>
+        </a></div>
+    </div>
+
+  </div>
+
+  <!-- The Modal  Navbar-->
+  <div id="myModal" class="modal">
+
+    <!-- <div class="navbar navbar-transform">
+      <div class="row"> -->
+    <!-- Navbar Title --
+        <div class="navbar-title">Qwerty Services</div>
+
+        <!-- close Btn --
+        <div class="navbar-close">
+          <span class="close">&times;</span>
+        </div>
+      </div>
+      <div class="row">
+        <!-- Navbar Menu list --
+        <div class="navbar-menu">
+          <a href="#about">Who We Are</a><br />
+          <a href="#services">What We Do</a><br />
+          <a href="#works">What We Did</a><br />
+          <a href="#contact">Get in Touch</a><br />
+          <a href="#">We are hiring</a>
+        </div>
+        </br></br>
+        <!-- Social Icons --
+        <div class="navbar-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>-->
+  </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+      document.body.style.position = 'fixed';
+      $('.navbar-transform').toggleClass('navbar');
+
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+      document.body.style.position = '';
+    };
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+
+
+  </script>
+
+  <!-- about section -->
+  <div class="primary-background" id="about">
+    <div class="title" style="text-align:end;padding-right: 10%;">qwerty services</div>
+
+    <div class="flex-content-2">
+      <div>
+        Qwerty Services serve on the market of digital world. We brand the
+        contents digitally.
+      </div>
+
+      <div>
+
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+        ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+        dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
+        et justo duo dolores et ea rebum. Stet clita kasd
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- team section -->
+  <div class="parallax2 parallax" id="team">
+    <div class="title">
+
+      team
+    </div>
+    <div class="subtitle">
+      Dedicated Team keeps us alive ! <br />
+      All Day EveryDay
+    </div>
+
+    <!-- team members -->
+
+    <div class="flex-content-team">
+      <div>
+        <img src="https://bit.ly/2MrwUJ8" alt="">
+        <div class="flex-content-team-div-overlay">
+          <div class="flex-content-team-title">Aden Shrestha</div>
+          <div class="flex-content-team-position">Manager
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="https://cdn1.i-scmp.com/sites/default/files/images/author/2018/09/02/roy_0556a.jpg" alt="">
+        <div class="flex-content-team-div-overlay">
+          <div class="flex-content-team-title">Durga Siwakoti</div>
+          <div class="flex-content-team-position">Marketing Executive
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="https://bit.ly/2MrwUJ8" alt="">
+        <div class="flex-content-team-div-overlay">
+          <div class="flex-content-team-title">Aden Shrestha</div>
+          <div class="flex-content-team-position">Manager
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="https://cdn1.i-scmp.com/sites/default/files/images/author/2018/09/02/roy_0556a.jpg" alt="">
+        <div class="flex-content-team-div-overlay">
+          <div class="flex-content-team-title">Durga Siwakoti</div>
+          <div class="flex-content-team-position">Marketing Executive
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- services section -->
+  <div class="primary-background" id="services">
+    <div class="title">
+      services
+    </div>
+    <div class="subtitle">
+      We believe in Genuine Services !
+    </div>
+
+    <!-- Service list -->
+    <div class="flex-content">
+      <div>
+        <div class="flex-content-div-overlay">
+          <div class="flex-content-div-title">Work One</div>
+          <div class="flex-content-div-view"> <a href="#">View</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex-content-div-overlay">
+          <div class="flex-content-div-title">Work One</div>
+          <div class="flex-content-div-view"> <a href="#">View</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex-content-div-overlay">
+          <div class="flex-content-div-title">Work One</div>
+          <div class="flex-content-div-view"> <a href="#">View</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <!-- works section -->
+  <div class="parallax3 parallax" id="works">
+    <div class="title">
+      works
+    </div>
+    <div class="subtitle">
+      We Work For Clients Like You! <br />
+      All Day EveryDay
+    </div>
+
+    <!-- Work list -->
+    <div class="flex-content">
+      <div>
+        <div class="flex-content-div-overlay">
+          <div class="flex-content-div-title">Work One</div>
+          <div class="flex-content-div-view"> <a href="#">View</a>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="flex-content-div-overlay">
+          <div class="flex-content-div-title">Work One</div>
+          <div class="flex-content-div-view"> <a href="#">View</a>
+          </div>
+        </div>
+
+      </div>
+      <div>
+        <div class="flex-content-div-overlay">
+          <div class="flex-content-div-title">Work One</div>
+          <div class="flex-content-div-view"> <a href="#">View</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- contact section -->
+  <div class="primary-background" id="contact">
+
+    <div class="flex-content-2" style="height: 95%;">
+      <div><img src="img/location.jpeg" alt="location" height="100%" width="80%" /></div>
+      <div>
+        <div class="title">qwerty services</div>
+        <br />
+        <div style="font-size: 30px;">Contact Us</div>
+        <br />
+        <div style="font-size: 25px;">We love to hear from you !</div>
+        <br />
+        <div style="font-size: 20px;">For Business Inquries !</div>
+        <div style="font-size: 15px;">
+          Qwerty Services
+          <br />
+          XYZ street, XYZ <br />
+          00-123-456-789
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer  -->
+
+    <div class="footer">
+      <div>
+        © <a href="#">2019 Kaal Vairab</a>
+        |
+        <a href="#">Terms & Conditions</a>
+        |
+        <a href="#">Privacy Policy</a></div>
+      <div>
+        <div class="developer-link">
+          <div class="developer-link-before">
+            &#60&#92&#62
+          </div>
+          <div class="developer-link-after">
+
+            &#60&#92Kaal Vairab&#62
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
