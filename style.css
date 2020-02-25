@@ -29,7 +29,7 @@ opacity: 95%;
 .modal-menu{
   display: flex;
   flex-direction: column;
-  padding-top: 2%;
+  padding-top: 2%+;
 }
 
 .modal-menu>a{
@@ -274,7 +274,7 @@ opacity: 95%;
   cursor: pointer;
 }
 
-/* Team */
+  /* Team */
 .flex-content-team {
   display: flex;
   flex-direction: row;
