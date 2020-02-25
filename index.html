@@ -13,6 +13,7 @@
 
   <!-- Font Library -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap" rel="stylesheet" />
+
   <!--Custom Stylesheet link -->
   <link rel="stylesheet" type="text/css" href="style.css" />
 
@@ -41,35 +42,24 @@
 
   <!-- The Modal  Navbar-->
   <div id="myModal" class="modal">
+    <div class="menu modal-close " id="menuClose">
+      X
+    </div>
 
-    <!-- <div class="navbar navbar-transform">
-      <div class="row"> -->
-    <!-- Navbar Title --
-        <div class="navbar-title">Qwerty Services</div>
+    <div class="modal-menu">
+      <a href="#about"> Who We Are</a>
+      <a href="#services">What We Do</a>
+      <a href="#team">Our Dedicated Team</a>
+      <a href="#works">Portfolio</a>
+      <a href="#contact"> Reach Us</a>
+    </div>
 
-        <!-- close Btn --
-        <div class="navbar-close">
-          <span class="close">&times;</span>
-        </div>
-      </div>
-      <div class="row">
-        <!-- Navbar Menu list --
-        <div class="navbar-menu">
-          <a href="#about">Who We Are</a><br />
-          <a href="#services">What We Do</a><br />
-          <a href="#works">What We Did</a><br />
-          <a href="#contact">Get in Touch</a><br />
-          <a href="#">We are hiring</a>
-        </div>
-        </br></br>
-        <!-- Social Icons --
-        <div class="navbar-social">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-        </div>
-      </div>
-    </div>-->
+    <div class="social-icon">
+      <a href="#">Fb</a>
+      <a href="#">Tw</a>
+      <a href="#">Ig</a>
+      <a href="#">Ld</a>
+    </div>
   </div>
 
   <script>
@@ -80,18 +70,17 @@
     var btn = document.getElementById("myBtn");
 
     // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
+    var close = document.getElementById("menuClose");
 
     // When the user clicks the button, open the modal
     btn.onclick = function () {
       modal.style.display = "block";
       document.body.style.position = 'fixed';
-      $('.navbar-transform').toggleClass('navbar');
 
     };
 
     // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
+    close.onclick = function () {
       modal.style.display = "none";
       document.body.style.position = '';
     };
