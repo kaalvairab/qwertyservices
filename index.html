@@ -18,7 +18,7 @@
   <link rel="stylesheet" type="text/css" href="style.css" />
 
   <!-- responsive style sheet -->
-  <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 600px)" href="responsive.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 650px)" href="responsive.css" />
 
   <!-- Custom JS  LINK -->
 </head>
@@ -26,7 +26,7 @@
 <body>
   <!-- header -->
 
-  <div class=" parallax">
+  <div class="parallax">
 
     <div class="flex-header">
       <div class="site-name">Qwerty Services</div>
@@ -50,7 +50,7 @@
     </div>
 
     <div class="modal-menu">
-      <a href="#about"> Who We Are</a>
+      <a href="#about" onclick="closeNav()"> Who We Are</a>
       <a href="#services">What We Do</a>
       <a href="#team">Our Dedicated Team</a>
       <a href="#works">Portfolio</a>
@@ -64,39 +64,6 @@
       <a href="#">Ld</a>
     </div>
   </div>
-
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    var close = document.getElementById("menuClose");
-
-    // When the user clicks the button, open the modal
-    btn.onclick = function () {
-      modal.style.display = "block";
-      document.body.style.position = 'fixed';
-
-    };
-
-    // When the user clicks on <span> (x), close the modal
-    close.onclick = function () {
-      modal.style.display = "none";
-      document.body.style.position = '';
-    };
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    };
-
-
-  </script>
 
   <!-- about section -->
   <div class="primary-background" id="about">
@@ -187,21 +154,22 @@
     <div class="flex-content">
       <div>
         <div class="flex-content-div-overlay">
-          <div class="flex-content-div-title">Work One</div>
+          <div class="flex-content-div-title">Web Developmet</div>
+          <div class="flex-content-div-view"> <a href="#">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="flex-content-div-overlay">
+          <div class="flex-content-div-title">Marketing</div>
           <div class="flex-content-div-view"> <a href="#">View</a>
           </div>
         </div>
       </div>
       <div>
         <div class="flex-content-div-overlay">
-          <div class="flex-content-div-title">Work One</div>
-          <div class="flex-content-div-view"> <a href="#">View</a>
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="flex-content-div-overlay">
-          <div class="flex-content-div-title">Work One</div>
+          <div class="flex-content-div-title">Photogrpahy</div>
           <div class="flex-content-div-view"> <a href="#">View</a>
           </div>
         </div>
@@ -254,7 +222,10 @@
   <div class="primary-background" id="contact">
 
     <div class="flex-content-2" style="height: 95%;">
-      <div><img src="img/location.jpeg" alt="location" height="100%" width="80%" /></div>
+      <div><iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60003.14728789402!2d85.33230067638057!3d27.718209021692473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1584037336534!5m2!1sen!2snp"
+          width="400" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+          tabindex="0"></iframe></div>
       <div>
         <div class="title">qwerty services</div>
         <br />
@@ -281,7 +252,8 @@
         |
         <a href="#">Terms & Conditions</a>
         |
-        <a href="#">Privacy Policy</a></div>
+        <a href="#">Privacy Policy</a>
+      </div>
       <div>
         <div class="developer-link">
           <div class="developer-link-before">
@@ -297,6 +269,9 @@
     </div>
 
   </div>
+
+
+  <script src="javascript.js"></script>
 
 </body>
 
